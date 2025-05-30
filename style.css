@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3a506b;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.task-input-section,
+.task-list-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.task-input-section h2,
+.task-list-section h2 {
+    margin-top: 0;
+    color: #0b4f6c;
+    border-bottom: 2px solid #0b4f6c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#addTaskForm input[type="text"],
+#addTaskForm textarea,
+#addTaskForm select {
+    width: calc(100% - 22px);
+    /* Учитываем padding и border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#addTaskForm textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+#addTaskForm button {
+    background-color: #1c77c3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskForm button:hover {
+    background-color: #165a96;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed .task-info h3,
+.task-item.completed .task-info p {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+.task-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.task-info p {
+    margin: 0 0 8px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.task-info span {
+    font-size: 0.8em;
+    color: #777;
+    background-color: #eef;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+.task-item.priority-high .task-info span {
+    background-color: #ffdddd;
+    color: #c00;
+}
+
+.task-item.priority-low .task-info span {
+    background-color: #ddffdd;
+    color: #060;
+}
+
+
+.task-actions button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.task-actions .delete-btn {
+    background-color: #d9534f;
+}
+
+.task-actions .complete-btn:hover {
+    background-color: #4cae4c;
+}
+
+.task-actions .delete-btn:hover {
+    background-color: #c9302c;
+}
+
+
+.filter-sort-controls {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333;
+    color: #eee;
+    font-size: 0.9em;
+}

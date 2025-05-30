@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Pro - Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> My Task Manager</h1>
+    </header>
+
+    <main>
+        <section class="task-input-section">
+            <h2>Add new task</h2>
+            <form id="addTaskFormm">
+                <input type="text" id="taskTitleInput" placeholder="Name of task" required>
+                <textarea id="taskDescriptionInput" placeholder="Description of task"></textarea>
+                <select id="taskPriorityInput">
+                    <option value="low">Low</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <h2>List Tasks</h2>
+            <div class="filter-sort-controls">
+                <p>Filter and sort but here</p>
+            </div>
+            <ul id="taskList"
+            <li class="task-item">
+                <div class="task-info">
+                    <h3>example task</h3>
+                    <p>This description of task</p>
+                    <span>Priority: Medium</span>
+                </div>
+                <div class="task-actions">
+                    <button class="complete-btn">Done</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </li>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Task Manager Pro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
